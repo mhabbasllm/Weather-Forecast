@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M_A Weather Forecast</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <h1>Weather Forecast</h1>
+            <button class="theme-toggle" id="theme-toggle">
+                <div class="toggle-circle"></div>
+            </button>
+        </header>
+    
+        <div class="search-container">
+            <input type="text" id="location-input" placeholder="Enter city name..." value="London">
+            <button id="search-btn">Search</button>
+        </div>
+    
+        <div class="error" id="error-message"></div>
+    
+        <div class="loading" id="loading">
+            <div class="loading-spinner"></div>
+            <p>Loading weather data...</p>
+        </div>
+    
+        <div class="weather-card" id="weather-card">
+            <h2 class="location" id="location">London</h2>
+            <p class="date" id="date">Monday, June 12, 2023</p>
+            <div class="weather-icon" id="weather-icon">
+                <i class="fas fa-sun"></i>
+            </div>
+            <div class="temperature" id="temperature">22°C</div>
+            <p class="description" id="description">Sunny</p>
+    
+            <div class="details">
+                <div class="detail-item">
+                    <div class="detail-icon">
+                        <i class="fas fa-temperature-high"></i>
+                    </div>
+                    <span class="detail-label">Feels Like</span>
+                    <span class="detail-value" id="feels-like">24°C</span>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <span class="detail-label">Humidity</span>
+                    <span class="detail-value" id="humidity">65%</span>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-icon">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <span class="detail-label">Wind Speed</span>
+                    <span class="detail-value" id="wind-speed">12 km/h</span>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-icon">
+                        <i class="fas fa-compress-arrows-alt"></i>
+                    </div>
+                    <span class="detail-label">Pressure</span>
+                    <span class="detail-value" id="pressure">1015 hPa</span>
+                </div>
+            </div>
+        </div>
+    
+        <footer>
+            <p>Powered by: <span style="font-weight: bold;">Muhammad Abbas</span></p>
+        </footer>
+    </div>
+    
+    <script src="./javascrift.js"></script>
+    
+</body>
+</html>

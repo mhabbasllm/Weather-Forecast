@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const pressureElement = document.getElementById('pressure');
 
     // API key and base URL
-    const apiKey = 'bb22e09f99954646adf134418250110';
+    const apiKey = 'YourAPIKEY IS Here';
     const baseUrl = 'http://api.weatherapi.com/v1/current.json';
 
     // Theme toggle functionality
@@ -160,4 +160,5 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initialize with default location
     fetchWeatherData('London');
 });
+
 
